@@ -14,8 +14,8 @@ class Student
   def self.create_from_collection(students_array)
     binding.pry
     students_array.each do |student_info|
-      student_info.each do |name, location|
-        Student.new(name, location)
+      student_info.each do |key, value|
+        Student.new(key = value)
       end
     end
   end
