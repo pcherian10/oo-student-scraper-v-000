@@ -12,12 +12,11 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    @@all.each do |student_info|
-      student_info.select do |
-
-
-
-
+    students_array.each do |student_info|
+      student_info.select do |name, location|
+        Student.new(:name = name, :location = location)
+      end
+    end
   end
 
   def add_student_attributes(attributes_hash)
