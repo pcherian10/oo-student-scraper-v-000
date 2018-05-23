@@ -15,7 +15,6 @@ class Student
     students_array.each do |student_info|
       student_info.each do |key, value|
         new_student = Student.new(key => value)
-        
       end
     end
   end
