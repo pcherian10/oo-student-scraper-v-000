@@ -17,7 +17,6 @@ class Student
         Student.new(key => value)
       end
     end
-    binding.pry
   end
 
   def add_student_attributes(attributes_hash)
